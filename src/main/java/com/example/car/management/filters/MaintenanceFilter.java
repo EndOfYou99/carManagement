@@ -5,14 +5,14 @@ import java.time.LocalDate;
 public class MaintenanceFilter {
 
     private Long carId;
-    private Integer garageId;
+    private Long garageId;
     private LocalDate startDate;
     private LocalDate endDate;
 
     public MaintenanceFilter() {
     }
     
-    public MaintenanceFilter(Long carId, Integer garageId, LocalDate startDate, LocalDate endDate) {
+    public MaintenanceFilter(Long carId, Long garageId, LocalDate startDate, LocalDate endDate) {
         this.carId = carId;
         this.garageId = garageId;
         this.startDate = startDate;
@@ -27,11 +27,11 @@ public class MaintenanceFilter {
         this.carId = carId;
     }
 
-    public Integer getGarageId() {
+    public Long getGarageId() {
         return garageId;
     }
 
-    public void setGarageId(Integer garageId) {
+    public void setGarageId(Long garageId) {
         this.garageId = garageId;
     }
 

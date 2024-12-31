@@ -33,7 +33,7 @@ public class DtoFactory {
             maintenance.getCar().getId(),
             maintenance.getCar().getModel(),
             maintenance.getServiceType(),
-            maintenance.getScheduledDate().toLocalDate(),
+            maintenance.getScheduledDate(),
             maintenance.getGarage().getId(),
             maintenance.getGarage().getName()
         );

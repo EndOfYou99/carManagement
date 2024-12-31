@@ -29,7 +29,7 @@ public class Car {
     @Column(name = "license_plate", nullable = false, unique = true)
     private String licensePlate;
 
-    @ManyToMany
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     @JoinTable(
         name = "car_garages",
         joinColumns = @JoinColumn(name = "car_id"),

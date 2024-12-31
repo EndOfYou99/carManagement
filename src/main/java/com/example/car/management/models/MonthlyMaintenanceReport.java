@@ -15,6 +15,11 @@ public class MonthlyMaintenanceReport {
 
     @Column(nullable = false)
     private Integer requests;
+    
+    public MonthlyMaintenanceReport(String yearMonth, Integer requests){
+    	this.yearMonth=yearMonth;
+    	this.requests=requests;
+    }
 
     public Long getId() {
         return id;

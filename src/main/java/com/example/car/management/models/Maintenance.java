@@ -1,6 +1,8 @@
 package com.example.car.management.models;
 
 import jakarta.persistence.*;
+
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -15,7 +17,7 @@ public class Maintenance {
     private String serviceType;
 
     @Column(name = "scheduled_date", nullable = false)
-    private LocalDateTime scheduledDate;
+    private LocalDate scheduledDate;
 
     @Column(name = "car_id", nullable = false)
     private Long carId;
@@ -47,11 +49,11 @@ public class Maintenance {
         this.serviceType = serviceType;
     }
 
-    public LocalDateTime getScheduledDate() {
+    public LocalDate getScheduledDate() {
         return scheduledDate;
     }
 
-    public void setScheduledDate(LocalDateTime scheduledDate) {
+    public void setScheduledDate(LocalDate scheduledDate) {
         this.scheduledDate = scheduledDate;
     }
 
